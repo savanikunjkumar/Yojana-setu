@@ -1,0 +1,203 @@
+// Prisma schema for the voice-enabled government scheme eligibility matcher.
+//
+// Two conventions worth knowing before editing:
+//
+//   1. Columns are mapped to snake_case while the Prisma fields stay camelCase.
+//      Eligibility matching runs as hand-written SQL (see the `matching_engine`
+//      migration), and snake_case keeps that SQL idiomatic and quote-free.
+//
+//   2. `Scheme.eligibility` is JSONB whose shape is owned by `@sih/shared`
+//      (`eligibilityRuleSchema`). It is deliberately NOT modelled as columns:
+//      scrapers add schemes with new rule combinations without a migration, and
+//      a database CHECK constraint plus the Zod normalizer keep the shape honest.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// Enums — mirrored from packages/shared/src/enums.ts.
+// apps/api/src/prisma/enum-parity.ts fails typecheck if the two ever diverge.
+// ---------------------------------------------------------------------------
+
+enum Gender {
+  MALE
+  FEMALE
+  TRANSGENDER
+}
+
+enum SocialCategory {
+  GENERAL
+  EWS
+  OBC
+  SC
+  ST
+  MINORITY
+}
+
+enum Occupation {
+  FARMER
+  AGRICULTURAL_LABOURER
+  DAILY_WAGE_LABOURER
+  ARTISAN
+  WEAVER
+  FISHERMAN
+  LIVESTOCK_REARER
+  STREET_VENDOR
+  SMALL_BUSINESS_OWNER
+  SELF_EMPLOYED
+  SALARIED_PRIVATE
+  GOVERNMENT_EMPLOYEE
+  STUDENT
+  HOMEMAKER
+  UNEMPLOYED
+  RETIRED
+  OTHER
+}
+
+enum IncomeBracket {
+  BELOW_50K
+  INR_50K_TO_1L
+  INR_1L_TO_2_5L
+  INR_2_5L_TO_5L
+  INR_5L_TO_8L
+  INR_8L_TO_10L
+  ABOVE_10L
+}
+
+enum SchemeCategory {
+  AGRICULTURE
+  EDUCATION
+  HEALTHCARE
+  HOUSING
+  EMPLOYMENT
+  SKILL_DEVELOPMENT
+  FINANCIAL_INCLUSION
+  SOCIAL_SECURITY
+  WOMEN_AND_CHILD
+  ENTREPRENEURSHIP
+  ENERGY
+  WATER_AND_SANITATION
+  DISABILITY_WELFARE
+  SENIOR_CITIZEN
+  TRANSPORT
+  OTHER
+}
+
+enum ApplicationStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  SUBMITTED
+  UNDER_REVIEW
+  APPROVED
+  REJECTED
+}
+
+// ---------------------------------------------------------------------------
+// Models
+// ---------------------------------------------------------------------------
+
+model Scheme {
+  id       String  @id @default(uuid()) @db.Uuid
+  name     String  @db.VarChar(300)
+  ministry String  @db.VarChar(200)
+  /// ISO 3166-2:IN code of the administering state. NULL means a central scheme.
+  state    String? @db.VarChar(8)
+
+  category       SchemeCategory
+  benefitText    String         @map("benefit_text")
+  applicationUrl String         @map("application_url") @db.VarChar(600)
+
+  /// Normalized `EligibilityRule` from @sih/shared. Written only via
+  /// `normalizeEligibility()`; guarded by the schemes_eligibility_normalized CHECK.
+  eligibility Json @db.JsonB
+
+  /// The eligibility text exactly as published on the source portal, before any
+  /// structuring. Kept because `eligibility` is a lossy interpretation of prose:
+  /// when a rule looks wrong, this is the only way to tell a bad rule from a bad
+  /// reading of a correct one. Null for hand-authored seed rows.
+  rawEligibility String? @map("raw_eligibility")
+
+  /// Set when this scheme's income ceiling is a PROXY we invented, because the real
+  /// criteria are SECC/BPL deprivation lists that carry no income figure.
+  ///
+  /// Non-null means "this match is weaker than a hard-criteria match" and the UI must
+  /// say so. It has to be stored rather than re-derived: the scraper knows it exactly
+  /// at write time, and reconstructing it later from prose keywords plus a suspiciously
+  /// round income cap would be guesswork about our own data.
+  proxyNote String? @map("proxy_note")
+
+  requiredDocuments String[] @map("required_documents")
+  sourceUrl         String   @map("source_url") @db.VarChar(600)
+
+  lastScrapedAt DateTime? @map("last_scraped_at") @db.Timestamptz(3)
+  createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt     DateTime  @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  applications Application[]
+
+  /// Natural key for scraper upserts: the same scheme name can exist once per state.
+  @@unique([name, state], map: "schemes_name_state_key")
+  @@index([category])
+  @@index([state])
+  @@index([eligibility], type: Gin)
+  @@map("schemes")
+}
+
+model Applicant {
+  id String @id @default(uuid()) @db.Uuid
+
+  /// Every attribute is nullable: a voice conversation fills the profile in
+  /// gradually, and the matcher reports missing answers as UNKNOWN rather than
+  /// treating them as a failed criterion.
+  age            Int?
+  gender         Gender?
+  incomeBracket  IncomeBracket?  @map("income_bracket")
+  occupation     Occupation?
+  state          String?         @db.VarChar(8)
+  district       String?         @db.VarChar(120)
+  socialCategory SocialCategory? @map("social_category")
+  /// Agricultural land owned, in hectares.
+  landHolding    Decimal?        @map("land_holding") @db.Decimal(10, 4)
+  isStudent      Boolean?        @map("is_student")
+  hasDisability  Boolean?        @map("has_disability")
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  applications Application[]
+
+  @@index([state])
+  @@index([createdAt])
+  @@map("applicants")
+}
+
+model Application {
+  id          String @id @default(uuid()) @db.Uuid
+  applicantId String @map("applicant_id") @db.Uuid
+  schemeId    String @map("scheme_id") @db.Uuid
+
+  status ApplicationStatus @default(NOT_STARTED)
+  /// Stamped the first time the application reaches a filed status.
+  appliedAt     DateTime? @map("applied_at") @db.Timestamptz(3)
+  lastCheckedAt DateTime? @map("last_checked_at") @db.Timestamptz(3)
+  notes         String?
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  applicant Applicant @relation(fields: [applicantId], references: [id], onDelete: Cascade)
+  scheme    Scheme    @relation(fields: [schemeId], references: [id], onDelete: Restrict)
+
+  /// One application row per applicant/scheme pair; status tracks its progress.
+  @@unique([applicantId, schemeId], map: "applications_applicant_scheme_key")
+  @@index([status])
+  @@index([applicantId])
+  @@index([schemeId])
+  @@map("applications")
+}

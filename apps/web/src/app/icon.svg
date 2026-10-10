@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Yojana Setu">
+  <!--
+    A bridge — setu — reduced to the two strokes that survive at 16px: a deck and the arch
+    under it. Anything finer (piers, cables, a wordmark) turns to mush at favicon size, and a
+    browser tab is the one place this has to read at 16 pixels.
+  -->
+  <rect width="32" height="32" fill="#F7F3EA"/>
+  <path d="M4 19c4-8 20-8 24 0" fill="none" stroke="#B85C18" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M3 21.5h26" fill="none" stroke="#171B26" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M10 21.5v4M22 21.5v4" fill="none" stroke="#171B26" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

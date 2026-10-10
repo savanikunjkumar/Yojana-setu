@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // The base config roots at "." so that `typecheck` also covers prisma/seed.ts.
+    // The build must root at "src", or Nest would emit dist/src/main.js and the
+    // `start` script would not find its entrypoint.
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "test/**/*"]
+}

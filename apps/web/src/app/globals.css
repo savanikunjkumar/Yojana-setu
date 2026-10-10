@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+    /* Faint ruled paper, the way a government form is printed. Sized in rem so it
+       scales with the user's font size rather than fighting it. */
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent calc(2rem - 1px),
+      rgba(216, 205, 182, 0.32) 2rem
+    );
+  }
+
+  /* The audience includes first-time smartphone users, so focus has to be
+     unmistakable rather than tasteful. */
+  :focus-visible {
+    @apply outline-none ring-[3px] ring-saffron ring-offset-2 ring-offset-paper;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Small-caps administrative label, as used down the left of a printed form. */
+  .label-caps {
+    @apply font-mono text-[0.6875rem] uppercase tracking-[0.16em] text-ink-faint;
+  }
+
+  .field {
+    @apply w-full min-h-[3rem] rounded-none border-0 border-b-2 border-rule bg-transparent
+      px-1 py-2 font-sans text-base text-ink transition-colors;
+  }
+
+  .field:hover {
+    @apply border-ink-faint;
+  }
+
+  .field:focus {
+    @apply border-saffron outline-none ring-0;
+  }
+
+  /* Sheet of paper lifted off the ruled background. */
+  .sheet {
+    @apply border border-paper-edge bg-paper shadow-card;
+  }
+
+  /* Perforated tear-off line between a card's body and its actions. */
+  .perforation {
+    background-image: linear-gradient(
+      to right,
+      theme('colors.paper.edge') 0 6px,
+      transparent 6px 12px
+    );
+    background-repeat: repeat-x;
+    background-size: 12px 1px;
+    @apply h-px w-full;
+  }
+}
+
+/* The application summary is meant to be carried to a government office, so printing
+   strips the app around it: no ruled background eating toner, no navigation, and the
+   scheme's own details expanded rather than behind a disclosure. */
+@media print {
+  body {
+    background-image: none !important;
+    background: white !important;
+  }
+
+  details {
+    display: block;
+  }
+
+  details > summary {
+    display: none;
+  }
+
+  a[href^='http']::after {
+    /* A printed link is useless without its address. */
+    content: ' (' attr(href) ')';
+    font-size: 0.7rem;
+    word-break: break-all;
+  }
+}

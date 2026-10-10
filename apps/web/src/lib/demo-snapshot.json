@@ -1,0 +1,2687 @@
+{
+  "capturedAt": "2026-08-15T06:04:30.393Z",
+  "schemeCount": 149,
+  "stats": {
+    "total": 149,
+    "central": 28,
+    "stateLevel": 121,
+    "distinctStates": 28,
+    "scraped": 131,
+    "handAuthored": 18,
+    "coverage": {
+      "ageBound": 50,
+      "incomeCap": 35,
+      "occupation": 26,
+      "gender": 18,
+      "socialCategory": 16,
+      "landCeiling": 0,
+      "studentOnly": 22
+    },
+    "proxyCount": 10,
+    "lastScrapedAt": "2026-08-14T19:46:05.818Z",
+    "byCategory": [
+      {
+        "category": "AGRICULTURE",
+        "count": 12
+      },
+      {
+        "category": "EDUCATION",
+        "count": 46
+      },
+      {
+        "category": "HEALTHCARE",
+        "count": 12
+      },
+      {
+        "category": "HOUSING",
+        "count": 4
+      },
+      {
+        "category": "EMPLOYMENT",
+        "count": 7
+      },
+      {
+        "category": "SKILL_DEVELOPMENT",
+        "count": 8
+      },
+      {
+        "category": "FINANCIAL_INCLUSION",
+        "count": 20
+      },
+      {
+        "category": "SOCIAL_SECURITY",
+        "count": 4
+      },
+      {
+        "category": "WOMEN_AND_CHILD",
+        "count": 12
+      },
+      {
+        "category": "ENTREPRENEURSHIP",
+        "count": 10
+      },
+      {
+        "category": "ENERGY",
+        "count": 1
+      },
+      {
+        "category": "DISABILITY_WELFARE",
+        "count": 2
+      },
+      {
+        "category": "SENIOR_CITIZEN",
+        "count": 5
+      },
+      {
+        "category": "TRANSPORT",
+        "count": 4
+      },
+      {
+        "category": "OTHER",
+        "count": 2
+      }
+    ]
+  },
+  "personas": [
+    {
+      "personaId": "student",
+      "transcript": "main unnees saal ki hoon, Uttar Pradesh se, college mein padh rahi hoon, anusuchit jaati se hoon aur ghar ki aay pachas hazaar se kam hai",
+      "match": {
+        "matches": [
+          {
+            "id": "aef3b76e-ac56-47a4-9f36-6eccd763bac6",
+            "name": "Post Matric Scholarship for Scheduled Caste Students",
+            "ministry": "Ministry of Social Justice & Empowerment",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Full tuition reimbursement plus a monthly maintenance allowance for Scheduled Caste students in recognised post-matriculation courses.",
+            "applicationUrl": "https://scholarships.gov.in/",
+            "eligibility": {
+              "minAge": 15,
+              "maxAge": null,
+              "maxAnnualIncome": 250000,
+              "gender": "*",
+              "socialCategory": [
+                "SC"
+              ],
+              "occupation": [
+                "STUDENT"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": true
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Caste certificate",
+              "Parental income certificate",
+              "Previous year mark sheet",
+              "Institution admission letter"
+            ],
+            "sourceUrl": "https://socialjustice.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.513Z",
+            "createdAt": "2026-08-14T19:13:50.514Z",
+            "updatedAt": "2026-08-14T19:13:50.514Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "b52eb829-d08f-4645-9039-ffea83506667",
+            "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+            "ministry": "Ministry of Women & Child Development",
+            "state": null,
+            "category": "WOMEN_AND_CHILD",
+            "benefitText": "₹5,000 in instalments to a pregnant woman or nursing mother for her first living child, and ₹6,000 for a second child if that child is a girl.",
+            "applicationUrl": "https://pmmvy.wcd.gov.in/",
+            "eligibility": {
+              "minAge": 19,
+              "maxAge": 49,
+              "maxAnnualIncome": null,
+              "gender": "FEMALE",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Mother and Child Protection card",
+              "Bank account in the mother’s name"
+            ],
+            "sourceUrl": "https://wcd.gov.in/schemes/pradhan-mantri-matru-vandana-yojana",
+            "lastScrapedAt": "2026-08-14T19:13:50.567Z",
+            "createdAt": "2026-08-14T19:13:50.569Z",
+            "updatedAt": "2026-08-14T19:13:50.569Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "2407555f-167b-4e44-8c26-c0fe9458b974",
+            "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+            "ministry": "Ministry of Petroleum & Natural Gas",
+            "state": null,
+            "category": "ENERGY",
+            "benefitText": "A free LPG connection issued in the name of an adult woman of the household, including a deposit-free cylinder, the first refill and a stove.",
+            "applicationUrl": "https://www.pmuy.gov.in/",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": 100000,
+              "gender": "FEMALE",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Ration card or state-issued proof of a poor household",
+              "Bank account details"
+            ],
+            "sourceUrl": "https://www.pmuy.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.574Z",
+            "createdAt": "2026-08-14T19:13:50.576Z",
+            "updatedAt": "2026-08-14T19:13:50.576Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "1d96a7db-3afb-443b-885f-89535c8ab958",
+            "name": "Atal Pension Yojana",
+            "ministry": "Ministry of Finance",
+            "state": null,
+            "category": "SOCIAL_SECURITY",
+            "benefitText": "A guaranteed monthly pension between ₹1,000 and ₹5,000 from the age of 60, based on the contribution chosen at enrolment. Income-tax payers are not eligible to join.",
+            "applicationUrl": "https://npscra.nsdl.co.in/scheme-details.php",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": 40,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Savings bank account",
+              "Mobile number"
+            ],
+            "sourceUrl": "https://www.pfrda.org.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.543Z",
+            "createdAt": "2026-08-14T19:13:50.545Z",
+            "updatedAt": "2026-08-14T19:13:50.545Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "4748efb5-cc44-4d9f-9b80-751a6a7e17db",
+            "name": "Central Vigilance Commission (CVC) Internship Scheme",
+            "ministry": "Ministry Of Personnel, Public Grievances And Pensions",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Remuneration\nInterns may be given a stipend of ₹ 10,000 per month necessary to meet the conveyance and other daily needs of the Interns.\nNOTE: The internship is neither a job nor a promise for a job in the future.\n\nLogistics and Support\nThe commission shall provide them with working space, internet facility and other necessities as deemed fit by the Branch heads.\nNOTE: The Interns may arrange their own transport and accommodation at their own expense.\n\nCertificate of Internship\nA certificate will be awarded to the Interns upon satisfactory completion of the internship and submission of their end-of-assignment report which will be evaluated by the Branch Officer with whom the intern is attached.",
+            "applicationUrl": "https://www.myscheme.gov.in/schemes/cvcis",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "STUDENT"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": true
+            },
+            "requiredDocuments": [
+              "Letter of NOC from the Present Institution indicating the status of the student in the institution",
+              "Statement of Purpose (SOP) (not exceeding 200 words)",
+              "The interns will be required to submit an end-of-the-assignment report and make a presentation on the allotted subject at the end of the internship period. The interns will also provide feedback on their experience of the programme to the Secretary CVC"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/cvcis",
+            "lastScrapedAt": "2026-08-14T19:34:16.646Z",
+            "createdAt": "2026-08-14T19:34:18.236Z",
+            "updatedAt": "2026-08-14T19:34:18.236Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "2bf52f6f-bc52-4948-8fdc-34088d6fb47e",
+            "name": "Pradhan Mantri Awas Yojana – Urban 2.0",
+            "ministry": "Ministry of Housing & Urban Affairs",
+            "state": null,
+            "category": "HOUSING",
+            "benefitText": "Central assistance of up to ₹2.5 lakh towards constructing or buying a house, or an interest subsidy on a home loan, for economically weaker section families in urban areas.",
+            "applicationUrl": "https://pmay-urban.gov.in/",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": 300000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Income certificate",
+              "Proof of urban residence",
+              "Bank account details",
+              "Affidavit confirming no pucca house is owned in India"
+            ],
+            "sourceUrl": "https://pmay-urban.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.419Z",
+            "createdAt": "2026-08-14T19:13:50.420Z",
+            "updatedAt": "2026-08-14T19:13:50.420Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "771beeb8-4d8e-4b74-b7cb-40d645301c4b",
+            "name": "Pradhan Mantri Suraksha Bima Yojana",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "SOCIAL_SECURITY",
+            "benefitText": "On Death- the Nominee shall get Rs. 2 Lakhs.\nTotal and irrecoverable loss of both eyes or loss of use of both hands or feet or loss of sight of one eye and loss of use of hand or foot- Subscriber shall get Rs. 2 Lakhs.\nTotal and irrecoverable loss of sight of one eye or loss of use of one hand or foot –subscriber shall get Rs. 1 Lakh.",
+            "applicationUrl": "https://jansuraksha.gov.in/Forms-PMSBY.aspx",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": 70,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/pmsby",
+            "lastScrapedAt": "2026-08-14T19:19:32.129Z",
+            "createdAt": "2026-08-14T19:19:33.422Z",
+            "updatedAt": "2026-08-15T04:08:32.296Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "adb372c4-a01c-4a86-b6f1-cb281a693eca",
+            "name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+            "ministry": "Ministry of Health & Family Welfare",
+            "state": null,
+            "category": "HEALTHCARE",
+            "benefitText": "₹5 lakh per family per year of cashless secondary and tertiary hospital treatment at empanelled public and private hospitals, with no cap on family size or age.",
+            "applicationUrl": "https://beneficiary.nha.gov.in/",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": 300000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Ration card",
+              "Family identification details"
+            ],
+            "sourceUrl": "https://nha.gov.in/PM-JAY",
+            "lastScrapedAt": "2026-08-14T19:13:50.452Z",
+            "createdAt": "2026-08-14T19:13:50.454Z",
+            "updatedAt": "2026-08-14T19:13:50.454Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "938cc4fb-9a35-41c3-b726-e6cefcc42eff",
+            "name": "Internship Programme By The Ministry Of External Affairs",
+            "ministry": "Ministry Of External Affairs",
+            "state": null,
+            "category": "SKILL_DEVELOPMENT",
+            "benefitText": "An honorarium of ₹ 10,000 per month will be paid to each intern to defray basic costs.\nIntroduction to the various aspects of the functioning of the MEA, its attached offices, the public interface of the Ministry, and its role in helping the Indian citizens.\nPossible visit one of the Missions abroad, subject to prevailing conditions.\nCost of one-time to and fro air travel subject to a ceiling of the prevailing economy class airfare between the State capital and Delhi, from the domicile State or from the college/university of the selected candidates will be provided. The interns would be responsible for their boarding and lodging in Delhi during the period of their internship.\nInterns will be assigned specific topics of work by the concerned Head of the Division (HOD) and may be required to conduct research, write reports, analyze evolving developments, or carry out any other task entrusted to them by the HOD.\nA total of 75 internships will be offered in a year in a single term of three months from April to June.",
+            "applicationUrl": "https://internship.mea.gov.in/registration",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": 25,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "1. Aadhaar Number",
+              "2. Proof of Identity",
+              "3. Proof of Address",
+              "4. Proof of Age/DOB (Class 10th/12th Marksheet)",
+              "5. Proof of Current Educational Qualification",
+              "6. Bank Details (for the payment of stipend)",
+              "At the time of joining on selection, the applicant shall be required to submit:",
+              "1. A letter from their Head of Institution/Head of Department/ Principal, indicating their status in the Institution",
+              "2. “No Objection Certificate (NOC)” from their Head of Institution/Head of Department/ Principal, allowing the student to undergo the Internship program for the proposed period",
+              "At the end of the internship, each intern shall submit a detailed report on the work carried out and, if required, make a presentation on it"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/ip-mea",
+            "lastScrapedAt": "2026-08-14T19:20:12.509Z",
+            "createdAt": "2026-08-14T19:20:14.049Z",
+            "updatedAt": "2026-08-15T04:09:00.342Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "755dd5a9-3eaa-4b5c-b015-1e8e138c3317",
+            "name": "Research Grant For In-Service Faculty Members",
+            "ministry": "Ministry of Education",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Tenure: 2 years.\nSlots: 200 or as may be decided by the Commission\nFinancial Assistance:\nThe quantum of support under the scheme is ₹ 10,00,000.\nThe grant can be utilized for purchasing items like minor equipment, consumables, contingencies, fieldwork, travel, etc.\nThe grant cannot be used for international travel, purchasing furniture items, or for appointing a project assistant or research fellow.\nThe quantum of funds under these heads can be decided by the recipient depending on his / her needs.\nThe items/equipment purchased from this grant shall be the property of the University.\nRelease of Grants:\nThe grant will be released in 3 installments to the university.\nInitially, 50% of the grant will be released on receipt of the joining report (Annexure-I).\nThe next installment of 25% of the research grant shall be paid on submission of the utilization certificate (Annexure-II) of the first installment.\nThe final installment of 25% of the research grant shall be released on a reimbursement basis on submitting the claims and utilization certificate of the second installment.\nHowever, the tenure to utilize the whole grant shall be 2 years from the release of the first installment of the research grant.",
+            "applicationUrl": "https://www.ugc.ac.in",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": 50,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Scanned copy of your passport-size photograph and signature (size upto 1MB, format: jpg)",
+              "Complete Research proposal (size upto 5 MB) and an abstract (size upto 1MB)",
+              "After filling out the application form, an auto-generated form will be displayed on your screen. Please take the printout of the same, get it signed by the HoD/Registrar, and upload it before submitting the application form",
+              "Proof of being a single girl child has to be submitted from the parents on an affidavit of Rs. 100/- stamp paper duly attested by SDM/First Class Magistrate/Tahsildar as per the prescribed proforma. In case, the parents are not alive, the affidavit can be submitted by the guardian of the Candidate (Size: less than 1MB)",
+              "For every Fellowship/Scholarship/Research Grant scheme of UGC, the beneficiary will have to submit feedback in the form of a report on the research work done on the web portal",
+              "After completion of the research work, the Institution concerned shall submit the summary of the awardee’s research work along with the published research papers"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/rgisfm",
+            "lastScrapedAt": "2026-08-14T19:20:07.206Z",
+            "createdAt": "2026-08-14T19:20:08.703Z",
+            "updatedAt": "2026-08-15T04:08:42.529Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "196e3a76-4774-4af2-800d-7a81b08568a6",
+            "name": "Stand-Up India",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "ENTREPRENEURSHIP",
+            "benefitText": "Facilitation of composite loan (inclusive of term loan and working capital) between ₹10 Lakhs and ₹100 Lakhs. Rupay debit card to be issued for convenience of the borrower.\nThe web portal by SIDBI provides hand-holding support through a network of agencies engaged in training, skill development, mentoring, project report preparation, application filling, work shed / utility support services, subsidy schemes etc.",
+            "applicationUrl": "https://www.standupmitra.in/Login/Register",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Proof of Identity: Voter’s ID Card / Passport / Driving License / PAN Card / Signature identification from present bankers of proprietor, partner of director ( if a company)",
+              "Proof of Residence: Recent telephone bills, electricity bill, property tax receipt /Passport / voter’s ID Card of Proprietor, partner of Director (if a company)",
+              "Proof of Business Address",
+              "Proof that the applicant is not a defaulter in any Bank / Financial Institution",
+              "Memorandum and articles of association of the Company / Partnership Deed of partners etc",
+              "Assets and liabilities statement of promoters and guarantors along with latest income tax returns",
+              "Rent Agreement (if business premises on rent) and clearance from pollution control board if applicable",
+              "SSI / MSME registration (if applicable)",
+              "Projected balance sheets for the next two years in case of working capital limits and for the period of the loan in case of term loan",
+              "Photocopies of lease deeds/ title deeds of all the properties being offered as primary and collateral securities",
+              "Documents to establish whether the applicant belongs to SC/ST Category, wherever applicable",
+              "Certificate of incorporation from ROC to establish whether majority stake holding in the company is in the hands of a person who belongs to SC/ST/Woman category",
+              "For cases with exposure above ₹ 25 Lakhs:",
+              "Profile of the unit (includes names of promoters, other directors in the company, the activity being undertaken addresses of all offices and plants, shareholding pattern etc",
+              "Last three years balance sheets of the Associate / Group Companies (if any)",
+              "Project report (for the proposed project if term funding is required) containing details of the machinery to be acquired, from whom to be acquired, price, names of suppliers, financial details like capacity of machines, capacity of utilization assumed, production, sales, projected profit and loss and balance sheets for the tenor of the loan, the details of labour, staff to be hired, basis of assumption of such financial details etc",
+              "Manufacturing process if applicable, major profile of executives in the company, any tie-ups, details about raw material used and their suppliers, details about the buyers, details about major-competitors and the company’s strength and weaknesses as compared to their competitors etc"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/sui",
+            "lastScrapedAt": "2026-08-14T19:19:26.464Z",
+            "createdAt": "2026-08-14T19:19:28.146Z",
+            "updatedAt": "2026-08-15T04:30:40.102Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "ee723c71-b321-4708-a499-c6219a339b8f",
+            "name": "Summer Internship Scheme Of DGFT",
+            "ministry": "Ministry Of Commerce And Industry",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Remuneration\nInterns will be paid a consolidated token remuneration of ₹10,000/- per month.\n\nLogistics Support\nNecessary logistics support will be provided to the intern taking into account the functional requirements.\n\nCertificate\nCertificates will be issued to the interns on satisfactory completion of their internship.",
+            "applicationUrl": "https://www.myscheme.gov.in/schemes/sisdgft",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": true
+            },
+            "requiredDocuments": [
+              "At the time of Joining the Internship-",
+              "Permission Letter from the Supervisor / Head of Department, in case he/she is interested to join an internship during his/her coursework",
+              "At the time of Completion of the Internship -",
+              "Report/Paper (to be submitted to the Head of the concerned Division)"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/sisdgft",
+            "lastScrapedAt": "2026-08-14T19:34:08.209Z",
+            "createdAt": "2026-08-14T19:34:13.347Z",
+            "updatedAt": "2026-08-14T19:34:13.347Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          }
+        ],
+        "eligibleCount": 17,
+        "nearMissCount": 81,
+        "consideredCount": 98,
+        "profileCompleteness": 0.8888888888888888,
+        "nextQuestion": null
+      },
+      "pack": {
+        "scheme": {
+          "id": "aef3b76e-ac56-47a4-9f36-6eccd763bac6",
+          "name": "Post Matric Scholarship for Scheduled Caste Students",
+          "ministry": "Ministry of Social Justice & Empowerment",
+          "state": null,
+          "category": "EDUCATION",
+          "benefitText": "Full tuition reimbursement plus a monthly maintenance allowance for Scheduled Caste students in recognised post-matriculation courses.",
+          "applicationUrl": "https://scholarships.gov.in/",
+          "eligibility": {
+            "minAge": 15,
+            "maxAge": null,
+            "maxAnnualIncome": 250000,
+            "gender": "*",
+            "socialCategory": [
+              "SC"
+            ],
+            "occupation": [
+              "STUDENT"
+            ],
+            "states": [
+              "*"
+            ],
+            "maxLandHolding": null,
+            "requiresDisability": false,
+            "isStudentOnly": true
+          },
+          "requiredDocuments": [
+            "Aadhaar card",
+            "Caste certificate",
+            "Parental income certificate",
+            "Previous year mark sheet",
+            "Institution admission letter"
+          ],
+          "sourceUrl": "https://socialjustice.gov.in/",
+          "lastScrapedAt": "2026-08-14T19:13:50.513Z",
+          "rawEligibility": null,
+          "proxyNote": null,
+          "createdAt": "2026-08-14T19:13:50.514Z",
+          "updatedAt": "2026-08-14T19:13:50.514Z"
+        },
+        "confidence": "CONFIRMED",
+        "proxyWarning": null,
+        "checklist": [
+          {
+            "document": "Parental income certificate",
+            "likelihood": "NEED_TO_OBTAIN",
+            "reason": "Issued by your tehsil or revenue office; you will need one stating Below ₹50,000",
+            "basedOn": "incomeBracket"
+          },
+          {
+            "document": "Aadhaar card",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "Almost every applicant already has this",
+            "basedOn": null
+          },
+          {
+            "document": "Caste certificate",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "You told us you are Scheduled Caste, so you likely hold this certificate",
+            "basedOn": "socialCategory"
+          },
+          {
+            "document": "Previous year mark sheet",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "You are studying, so your institution can issue this",
+            "basedOn": "isStudent"
+          },
+          {
+            "document": "Institution admission letter",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "You are studying, so your institution can issue this",
+            "basedOn": "isStudent"
+          }
+        ],
+        "prefilled": [
+          {
+            "label": "Scheme applied for",
+            "value": "Post Matric Scholarship for Scheduled Caste Students",
+            "field": null
+          },
+          {
+            "label": "Implementing department",
+            "value": "Ministry of Social Justice & Empowerment",
+            "field": null
+          },
+          {
+            "label": "Applicant name",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Age",
+            "value": "19 years",
+            "field": "age"
+          },
+          {
+            "label": "Gender",
+            "value": "Female",
+            "field": "gender"
+          },
+          {
+            "label": "State",
+            "value": "Uttar Pradesh",
+            "field": "state"
+          },
+          {
+            "label": "District",
+            "value": "Varanasi",
+            "field": "district"
+          },
+          {
+            "label": "Social category",
+            "value": "Scheduled Caste",
+            "field": "socialCategory"
+          },
+          {
+            "label": "Annual family income",
+            "value": "Below ₹50,000",
+            "field": "incomeBracket"
+          },
+          {
+            "label": "Occupation",
+            "value": "Student",
+            "field": "occupation"
+          },
+          {
+            "label": "Land holding",
+            "value": null,
+            "field": "landHolding"
+          },
+          {
+            "label": "Currently studying",
+            "value": "Yes",
+            "field": "isStudent"
+          },
+          {
+            "label": "Disability certificate",
+            "value": "No",
+            "field": "hasDisability"
+          },
+          {
+            "label": "Aadhaar number",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Bank account number",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Mobile number",
+            "value": null,
+            "field": null
+          }
+        ],
+        "unverifiedCriteria": [],
+        "applyUrl": "https://scholarships.gov.in/",
+        "sourceUrl": "https://socialjustice.gov.in/"
+      },
+      "packSchemeId": "aef3b76e-ac56-47a4-9f36-6eccd763bac6"
+    },
+    {
+      "personaId": "farmer",
+      "transcript": "main iktalis saal ka kisan hoon, Bihar ke Gaya se, mere paas sava hectare zameen hai aur saal ki kamai do lakh ke aas paas hai",
+      "match": {
+        "matches": [
+          {
+            "id": "2bf52f6f-bc52-4948-8fdc-34088d6fb47e",
+            "name": "Pradhan Mantri Awas Yojana – Urban 2.0",
+            "ministry": "Ministry of Housing & Urban Affairs",
+            "state": null,
+            "category": "HOUSING",
+            "benefitText": "Central assistance of up to ₹2.5 lakh towards constructing or buying a house, or an interest subsidy on a home loan, for economically weaker section families in urban areas.",
+            "applicationUrl": "https://pmay-urban.gov.in/",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": 300000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Income certificate",
+              "Proof of urban residence",
+              "Bank account details",
+              "Affidavit confirming no pucca house is owned in India"
+            ],
+            "sourceUrl": "https://pmay-urban.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.419Z",
+            "createdAt": "2026-08-14T19:13:50.420Z",
+            "updatedAt": "2026-08-14T19:13:50.420Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "d11929a6-ec0e-44e7-8a2c-3a3738a4c12d",
+            "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+            "ministry": "Ministry of Agriculture & Farmers Welfare",
+            "state": null,
+            "category": "AGRICULTURE",
+            "benefitText": "₹6,000 per year paid as three equal instalments of ₹2,000 directly into the bank account of a landholding farmer family. Institutional landholders, income-tax payers and serving government employees are excluded.",
+            "applicationUrl": "https://pmkisan.gov.in/RegistrationFormNew.aspx",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "FARMER"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Land ownership record (khatauni / khasra)",
+              "Bank account passbook",
+              "Mobile number linked to Aadhaar"
+            ],
+            "sourceUrl": "https://pmkisan.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.272Z",
+            "createdAt": "2026-08-14T19:13:50.337Z",
+            "updatedAt": "2026-08-14T19:13:50.337Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "771beeb8-4d8e-4b74-b7cb-40d645301c4b",
+            "name": "Pradhan Mantri Suraksha Bima Yojana",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "SOCIAL_SECURITY",
+            "benefitText": "On Death- the Nominee shall get Rs. 2 Lakhs.\nTotal and irrecoverable loss of both eyes or loss of use of both hands or feet or loss of sight of one eye and loss of use of hand or foot- Subscriber shall get Rs. 2 Lakhs.\nTotal and irrecoverable loss of sight of one eye or loss of use of one hand or foot –subscriber shall get Rs. 1 Lakh.",
+            "applicationUrl": "https://jansuraksha.gov.in/Forms-PMSBY.aspx",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": 70,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/pmsby",
+            "lastScrapedAt": "2026-08-14T19:19:32.129Z",
+            "createdAt": "2026-08-14T19:19:33.422Z",
+            "updatedAt": "2026-08-15T04:08:32.296Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "adb372c4-a01c-4a86-b6f1-cb281a693eca",
+            "name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+            "ministry": "Ministry of Health & Family Welfare",
+            "state": null,
+            "category": "HEALTHCARE",
+            "benefitText": "₹5 lakh per family per year of cashless secondary and tertiary hospital treatment at empanelled public and private hospitals, with no cap on family size or age.",
+            "applicationUrl": "https://beneficiary.nha.gov.in/",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": 300000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Ration card",
+              "Family identification details"
+            ],
+            "sourceUrl": "https://nha.gov.in/PM-JAY",
+            "lastScrapedAt": "2026-08-14T19:13:50.452Z",
+            "createdAt": "2026-08-14T19:13:50.454Z",
+            "updatedAt": "2026-08-14T19:13:50.454Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "755dd5a9-3eaa-4b5c-b015-1e8e138c3317",
+            "name": "Research Grant For In-Service Faculty Members",
+            "ministry": "Ministry of Education",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Tenure: 2 years.\nSlots: 200 or as may be decided by the Commission\nFinancial Assistance:\nThe quantum of support under the scheme is ₹ 10,00,000.\nThe grant can be utilized for purchasing items like minor equipment, consumables, contingencies, fieldwork, travel, etc.\nThe grant cannot be used for international travel, purchasing furniture items, or for appointing a project assistant or research fellow.\nThe quantum of funds under these heads can be decided by the recipient depending on his / her needs.\nThe items/equipment purchased from this grant shall be the property of the University.\nRelease of Grants:\nThe grant will be released in 3 installments to the university.\nInitially, 50% of the grant will be released on receipt of the joining report (Annexure-I).\nThe next installment of 25% of the research grant shall be paid on submission of the utilization certificate (Annexure-II) of the first installment.\nThe final installment of 25% of the research grant shall be released on a reimbursement basis on submitting the claims and utilization certificate of the second installment.\nHowever, the tenure to utilize the whole grant shall be 2 years from the release of the first installment of the research grant.",
+            "applicationUrl": "https://www.ugc.ac.in",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": 50,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Scanned copy of your passport-size photograph and signature (size upto 1MB, format: jpg)",
+              "Complete Research proposal (size upto 5 MB) and an abstract (size upto 1MB)",
+              "After filling out the application form, an auto-generated form will be displayed on your screen. Please take the printout of the same, get it signed by the HoD/Registrar, and upload it before submitting the application form",
+              "Proof of being a single girl child has to be submitted from the parents on an affidavit of Rs. 100/- stamp paper duly attested by SDM/First Class Magistrate/Tahsildar as per the prescribed proforma. In case, the parents are not alive, the affidavit can be submitted by the guardian of the Candidate (Size: less than 1MB)",
+              "For every Fellowship/Scholarship/Research Grant scheme of UGC, the beneficiary will have to submit feedback in the form of a report on the research work done on the web portal",
+              "After completion of the research work, the Institution concerned shall submit the summary of the awardee’s research work along with the published research papers"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/rgisfm",
+            "lastScrapedAt": "2026-08-14T19:20:07.206Z",
+            "createdAt": "2026-08-14T19:20:08.703Z",
+            "updatedAt": "2026-08-15T04:08:42.529Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "196e3a76-4774-4af2-800d-7a81b08568a6",
+            "name": "Stand-Up India",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "ENTREPRENEURSHIP",
+            "benefitText": "Facilitation of composite loan (inclusive of term loan and working capital) between ₹10 Lakhs and ₹100 Lakhs. Rupay debit card to be issued for convenience of the borrower.\nThe web portal by SIDBI provides hand-holding support through a network of agencies engaged in training, skill development, mentoring, project report preparation, application filling, work shed / utility support services, subsidy schemes etc.",
+            "applicationUrl": "https://www.standupmitra.in/Login/Register",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Proof of Identity: Voter’s ID Card / Passport / Driving License / PAN Card / Signature identification from present bankers of proprietor, partner of director ( if a company)",
+              "Proof of Residence: Recent telephone bills, electricity bill, property tax receipt /Passport / voter’s ID Card of Proprietor, partner of Director (if a company)",
+              "Proof of Business Address",
+              "Proof that the applicant is not a defaulter in any Bank / Financial Institution",
+              "Memorandum and articles of association of the Company / Partnership Deed of partners etc",
+              "Assets and liabilities statement of promoters and guarantors along with latest income tax returns",
+              "Rent Agreement (if business premises on rent) and clearance from pollution control board if applicable",
+              "SSI / MSME registration (if applicable)",
+              "Projected balance sheets for the next two years in case of working capital limits and for the period of the loan in case of term loan",
+              "Photocopies of lease deeds/ title deeds of all the properties being offered as primary and collateral securities",
+              "Documents to establish whether the applicant belongs to SC/ST Category, wherever applicable",
+              "Certificate of incorporation from ROC to establish whether majority stake holding in the company is in the hands of a person who belongs to SC/ST/Woman category",
+              "For cases with exposure above ₹ 25 Lakhs:",
+              "Profile of the unit (includes names of promoters, other directors in the company, the activity being undertaken addresses of all offices and plants, shareholding pattern etc",
+              "Last three years balance sheets of the Associate / Group Companies (if any)",
+              "Project report (for the proposed project if term funding is required) containing details of the machinery to be acquired, from whom to be acquired, price, names of suppliers, financial details like capacity of machines, capacity of utilization assumed, production, sales, projected profit and loss and balance sheets for the tenor of the loan, the details of labour, staff to be hired, basis of assumption of such financial details etc",
+              "Manufacturing process if applicable, major profile of executives in the company, any tie-ups, details about raw material used and their suppliers, details about the buyers, details about major-competitors and the company’s strength and weaknesses as compared to their competitors etc"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/sui",
+            "lastScrapedAt": "2026-08-14T19:19:26.464Z",
+            "createdAt": "2026-08-14T19:19:28.146Z",
+            "updatedAt": "2026-08-15T04:30:40.102Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "59f1700a-4d22-4d7e-ab7b-ead30fdc9310",
+            "name": "Abdul Kalam Technology Innovation National Fellowship",
+            "ministry": "Ministry Of Science And Technology",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "The fellowship amount is ₹25,000/- per month in addition to regular income.\nA Research grant of ₹15.00 lakh per annum.\nAn Overhead of ₹1.00 lakh per annum to the host institute.\nNote: The fellowship is taxable as per the IT rule of the Government of India.",
+            "applicationUrl": "https://www.inae.in/research-innovation/abdul-kalam-technology-innovation-national-fellowship/",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "1. Identity proof of candidate",
+              "2. Passport size photograph",
+              "3. Proof of age",
+              "4. Proof that the candidate is working",
+              "5. Educational Qualifications certificates",
+              "6. Details of Professional awards/recognition/fellowship",
+              "7. Endorsement Certificate",
+              "8. Bank Details (Bank Account Number, Name of the Bank, Bank Branch, and IFSC Code)",
+              "9. Any other document, as required"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/aktinf",
+            "lastScrapedAt": "2026-08-14T19:39:41.287Z",
+            "createdAt": "2026-08-14T19:39:43.349Z",
+            "updatedAt": "2026-08-14T19:39:43.349Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "abd5332b-a51b-4ea8-9555-db439c372f87",
+            "name": "Indirect Tax Internship Scheme In Central Board Of Indirect Taxes And Customs (CBIC)",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Stipend\nThe student interns will receive a stipend of ₹ 5,000/- per month for satisfactory conduct of the internship.\nThe graduate interns will receive a stipend of ₹ 15,000/- per month for satisfactory conduct of the internship.\n\nCertificate\nOn satisfactory completion of the internship, a Certificate of Internship shall be awarded.\nCertificate of Internship would be given to only such law student interns who complete a minimum of one month and to such law graduates who complete a minimum three months period of internship.\nInterns not completing such a minimum period would not be awarded any certificate.",
+            "applicationUrl": "https://www.myscheme.gov.in/schemes/itiscbic",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Passport Sized Photograph",
+              "Aadhaar Card",
+              "Proof of Address (for correspondence)",
+              "Proof of Educational Qualification (i.e. result sheet/mark sheet/provisional degree etc.)",
+              "NOTE: The students who have appeared in the final year/ semester examination on the cutoff date will have to show proof of having passed the LLB course at the time of joining"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/itiscbic",
+            "lastScrapedAt": "2026-08-14T19:33:47.623Z",
+            "createdAt": "2026-08-14T19:33:49.047Z",
+            "updatedAt": "2026-08-14T19:33:49.047Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "c819e642-0674-48cf-8e9b-5438c51c16a5",
+            "name": "National Solar Science Fellowship Programme",
+            "ministry": "Ministry Of New and Renewable Energy",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Each selected Fellow will receive a total annual grant of up to ₹32.00 lakhs comprising (i) emolument of up to ₹12.00 lakhs (ii) contingencies of up to ₹5.00 lakhs and (iii) research grant of up to ₹15.00 lakhs. This will be pro-rated for the duration of the tenure of the particular Fellow.\nThis grant will be released to the host institution for being granted to the Fellow.\nThe Fellow may also raise additional resources from other sources such as the host Institution, grant providers, grant-in-aid Institutions, etc. for the purpose of carrying out his/her research.\nNote 01: On selection, the Fellow will be attached to one of the selected schools/institutions in consultation with the Fellow as well as the host institution.\nNote 02: Selected Fellows shall commit to work at the host institution for the full tenure of the fellowship and shall submit a bond in this regard to the host institution.\nNote 03: The Fellow must submit quarterly progress reports and a final technical report to the Fellowship Management Committee. The Fellowship Management Committee may from time to time, seek updates from the Fellow and provide inputs and guidance to the project of the Fellows so that the project remains relevant to the Government of India agenda and can be successfully completed on time.\nNote 04: An annual conference of the Fellows will be held, where the Fellows will be expected to present their findings to the Fellowship Management Committee and other invitees and share knowledge and learning and discuss areas for further collaboration and practical application of their research.\nNote 05: There would be a visible improvement in the quality of solar technology through the application of innovative solutions/technologies in the field arising out of the research under the programme.\nNote 06: The resources in terms of manpower and infrastructural facilities available at various schools/ institutions of the country would be enhanced /strengthened.",
+            "applicationUrl": "https://www.indiascienceandtechnology.gov.in/nurturing-minds/s-and-t-awards/national/national-solar-science-fellowship-programme",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Identity proof",
+              "Certificates of Educational Qualifications",
+              "Caste Certificate",
+              "Experience certificate in R&D",
+              "The R&D proposal",
+              "Details of any awards/recognition received in the subject area at the national/international level",
+              "Details of films/audio-visuals produced",
+              "Details of Scientific/technical papers published in the relevant subject area",
+              "Any other document (If applicable)"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/nssfp",
+            "lastScrapedAt": "2026-08-14T19:33:39.164Z",
+            "createdAt": "2026-08-14T19:33:43.829Z",
+            "updatedAt": "2026-08-14T19:33:43.829Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "411e9cad-654d-44d4-8d19-733df98fd6d8",
+            "name": "Persons With Disabilities Scheme In Colleges: Higher Education For Persons With Special Needs",
+            "ministry": "Ministry Of Social Justice and Empowerment",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "Provision of Facilities and Financial assistance\nThe HEPSN scheme has three components. They are enumerated as follows:\nComponent 1: Establishment of Enabling Units for differently-abled Persons\nTo develop awareness in the higher education system and also to provide necessary guidance and counseling to differently-abled persons, it is proposed to establish resource units in colleges in the country, which will be called Enabling Units. The functions of this Enabling Unit will be to:\n1. Facilitate admission of differently-abled persons in various courses;\n2. Provide guidance and counseling to differently-abled individuals;\n3. Create awareness about the needs of differently-abled persons, and other general issues concerning their learning; and\n4. Assist differently-abled graduates to gain successful employment in the public as well as private sectors.\nThe special unit will be coordinated by a faculty member to be nominated by the head of the institution. He/she will work as an honorary coordinator for which a token honorarium of Rs. 4000/- per month will be paid. The unit will also have a budgetary provision of ₹ 50,000/per year towards general administration, stationery, and contingencies, and to avail the services of experts and personnel for organizing awareness programs, counseling sessions, etc., for efficient and independent functioning in order to achieve its objectives.\n\nComponent 2: Providing Access to Differently-abled Persons\n\nThe UGC will make a one-time grant of up to ₹ 5,00,000 per college during the Plan period so that the colleges can address the accessibility issues pertaining to disability and make special arrangements in the environment for their mobility and independent functioning.\nThe colleges address accessibility-related issues as per the stipulations of the Persons with Disabilities Act 1995.\nThe colleges ensure that all existing structures as well as future construction projects in their campuses are made disabled-friendly.\nThe institutes create special facilities such as ramps, rails, and special toilets, and make other necessary changes to suit the special needs of differently-abled persons.\n\nComponent 3: Providing Special Equipment to Augment Educational Services for Differently-abled Persons\nDifferently-abled persons require special aids and appliances for their daily functioning. These aids are available through various schemes of the Ministry of Social Justice and Empowerment. In addition to the procurement of assistive devices through these schemes, higher education institutions may also need special learning and assessment devices to help differently-abled students enrolled in higher education. In addition, visually challenged students need Readers. Availability of devices such as computers with screen reading software, low-vision aids, scanners, mobility devices, etc., in the institutes, would enrich the educational experiences of differently-abled persons. Therefore, colleges are encouraged to procure such devices and provide the facility of Readers for visually challenged students. The UGC will provide an ad hoc one-time grant of up to ₹1,50,000 per college during the Twelfth Plan period",
+            "applicationUrl": "https://www.myscheme.gov.in/schemes/hepsn",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar Card",
+              "2-Passport Sized Photograph (Signed Across)",
+              "Residential Certificate",
+              "Disability Certificate",
+              "Details of the Bank Account (Bank Name, Branch Name, Address, IFSC, etc)",
+              "Proof of the Latest Educational Qualification (Passing Certificate or Marksheet)",
+              "Bonafide Certificate from the School/College",
+              "Any other document required by the College or the District Social Welfare Office"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/hepsn",
+            "lastScrapedAt": "2026-08-14T19:32:00.281Z",
+            "createdAt": "2026-08-14T19:32:09.620Z",
+            "updatedAt": "2026-08-14T19:32:09.620Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "112741b9-6476-4ab5-a1ce-0cd9911ffdd4",
+            "name": "Swatantrata Sainik Samman Pension Scheme",
+            "ministry": "Ministry Of Home Affairs",
+            "state": null,
+            "category": "SOCIAL_SECURITY",
+            "benefitText": "Category of Freedom Fighters: Ex-Andaman Political/ Prisoners/ Spouses\nBasic Pension w.e.f. 15.08.2016 in Rupees (Per Month): 30,000/-\nTotal Amount of Pension Including 3% DR in Rupees (Per Month): 30,900/-\n\nCategory of Freedom Fighters: Freedom Fighters Who Suffered Outside British India/Spouses\nBasic Pension w.e.f. 15.08.2016 in Rupees (Per Month): 28,000/-\nTotal Amount of Pension Including 3% DR in Rupees (Per Month): 28,840/-\n\nCategory of Freedom Fighters: Other Freedom Fighters/ spouses including INA\nBasic Pension w.e.f. 15.08.2016 in Rupees (Per Month): 26,000/-\nTotal Amount of Pension Including 3% DR in Rupees (Per Month): 26,780/-\n\nCategory of Freedom Fighters: Dependent parents/eligible daughters (maximum 3 daughters at any point of time)\nBasic Pension w.e.f. 15.08.2016 in Rupees (Per Month): 50% of the sum that would have been admissible to the Freedom Fighter i.e. in the range of ₹ 13,000/- to ₹ 15,000/-\nTotal Amount of Pension Including 3% DR in Rupees (Per Month): 50% of the sum that would have been admissible to the Freedom Fighter i.e. in the range of ₹ 13,390/- to ₹ 15,450/-",
+            "applicationUrl": "https://www.myscheme.gov.in/schemes/sssps",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "AT THE TIME OF APPLICATION",
+              "The applicant should furnish the documents indicated below whichever is applicable:",
+              "(A) Imprisonment/Detention etc",
+              "Certificate from the concerned jail authorities, District Magistrates or the State Government in case of non-availability of such certificates co-prisoner certificates from a sitting MP or MLA or Ex-MP or ex-MLA specifying the jail period (Annexure-I in the application form.)",
+              "(B) Remained Underground",
+              "(i) Documentary evidence by way of Court’s/Government orders proclaiming the applicant as an offender, announcing an award on his head, or for his arrest or ordering his detention",
+              "(ii) Certificates from veteran freedom fighters who had themselves undergone imprisonment for five years or more if the official records are not forthcoming due to their non-availability",
+              "(C) Internment or Externment",
+              "(i) Order of internment or externment or any other corroboratory documentary evidence",
+              "(ii) Certificates from prominent freedom fighters who had themselves undergone imprisonment for five years or more if the official records are not available. (Annexure-II in the application.)",
+              "NOTE: The Certifier veteran freedom fighters in respect of underground suffering, internment/externment and the applicant should belong to the same administrative unit before the reorganization of States and their area of operation must be the same",
+              "(D) Loss of Property, Job, etc",
+              "Orders of confiscation and sale of property, Orders of dismissal or removal from service",
+              "AT THE TIME OF RECEIVING PENSION",
+              "The payment of the pension will be made on the production of the following identification documents to the Treasury Officer/Sub-Treasury Officer:",
+              "1. Photograph",
+              "2. Two prominent identification marks",
+              "3. Specimen signature or left-hand thumb and finger impressions duly attested by a competent authority, in the case of freedom fighters who are not literate enough to sign their names",
+              "4. Date of birth"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/sssps",
+            "lastScrapedAt": "2026-08-14T19:38:36.598Z",
+            "createdAt": "2026-08-14T19:38:39.168Z",
+            "updatedAt": "2026-08-14T19:38:39.168Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "d4a8a009-204d-4a48-bad3-c019f52dcbec",
+            "name": "Unemployed Youth Employment Generation Programme",
+            "ministry": "Government of Tamil Nadu",
+            "state": "IN-TN",
+            "category": "ENTREPRENEURSHIP",
+            "benefitText": "Under the scheme, subsidy assistance will be provided by the State Government up to 25% of the project cost (Maximum to a limit of ₹2.50 Lakhs) for setting up Manufacturing/ Service / Business enterprises.",
+            "applicationUrl": "https://msmeonline.tn.gov.in/uyegp/uyegp_desc.php",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": 500000,
+              "gender": "*",
+              "socialCategory": [
+                "GENERAL",
+                "MINORITY",
+                "OBC",
+                "SC",
+                "ST"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "IN-TN"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Identity proof i.e. copy of Election ID Card/ Aadhaar card etc",
+              "Copy of PAN Card",
+              "Passport size photo",
+              "Income Certificate",
+              "Educational Qualification proof- Transfer certificate/ Record Sheet issued by School/College.(Two Copies)",
+              "Proof of age",
+              "Caste/Community Certificate",
+              "Ration Card (In case of applicants who don't possess a valid Ration Card, a Nativity certificate from the Thasildhar/ Aadhar card xerox / Election voters identity card Xerox)",
+              "Project Report",
+              "Valid Quotations with GST number",
+              "Valid certificate for Ex-Serviceman /Differently abled /Transgender",
+              "Bank account details",
+              "Affidavit - For reference to the candidate which should be typed in a ₹20/- Non-Judicial Stamp Paper duly Certified and Signed by the Notary Public and then submitted along with a copy of the Rental/Lease Agreement to the bank while sanctioning the loan"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/uyegp",
+            "lastScrapedAt": "2026-08-14T19:35:19.607Z",
+            "createdAt": "2026-08-14T19:35:22.704Z",
+            "updatedAt": "2026-08-14T19:35:22.704Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "FAIL",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [
+              "states"
+            ],
+            "unverifiedCriteria": [],
+            "isEligible": false,
+            "needsIncomeVerification": false,
+            "matchScore": 70
+          }
+        ],
+        "eligibleCount": 11,
+        "nearMissCount": 49,
+        "consideredCount": 60,
+        "profileCompleteness": 1,
+        "nextQuestion": null
+      },
+      "pack": {
+        "scheme": {
+          "id": "2bf52f6f-bc52-4948-8fdc-34088d6fb47e",
+          "name": "Pradhan Mantri Awas Yojana – Urban 2.0",
+          "ministry": "Ministry of Housing & Urban Affairs",
+          "state": null,
+          "category": "HOUSING",
+          "benefitText": "Central assistance of up to ₹2.5 lakh towards constructing or buying a house, or an interest subsidy on a home loan, for economically weaker section families in urban areas.",
+          "applicationUrl": "https://pmay-urban.gov.in/",
+          "eligibility": {
+            "minAge": 18,
+            "maxAge": null,
+            "maxAnnualIncome": 300000,
+            "gender": "*",
+            "socialCategory": [
+              "*"
+            ],
+            "occupation": [
+              "*"
+            ],
+            "states": [
+              "*"
+            ],
+            "maxLandHolding": null,
+            "requiresDisability": false,
+            "isStudentOnly": false
+          },
+          "requiredDocuments": [
+            "Aadhaar card",
+            "Income certificate",
+            "Proof of urban residence",
+            "Bank account details",
+            "Affidavit confirming no pucca house is owned in India"
+          ],
+          "sourceUrl": "https://pmay-urban.gov.in/",
+          "lastScrapedAt": "2026-08-14T19:13:50.419Z",
+          "rawEligibility": null,
+          "proxyNote": null,
+          "createdAt": "2026-08-14T19:13:50.420Z",
+          "updatedAt": "2026-08-14T19:13:50.420Z"
+        },
+        "confidence": "CONFIRMED",
+        "proxyWarning": null,
+        "checklist": [
+          {
+            "document": "Income certificate",
+            "likelihood": "NEED_TO_OBTAIN",
+            "reason": "Issued by your tehsil or revenue office; you will need one stating ₹1 lakh – ₹2.5 lakh",
+            "basedOn": "incomeBracket"
+          },
+          {
+            "document": "Affidavit confirming no pucca house is owned in India",
+            "likelihood": "UNKNOWN",
+            "reason": "Check the official portal for what this involves",
+            "basedOn": null
+          },
+          {
+            "document": "Aadhaar card",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "Almost every applicant already has this",
+            "basedOn": null
+          },
+          {
+            "document": "Proof of urban residence",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "Your Aadhaar or ration card usually proves Bihar residence",
+            "basedOn": "state"
+          },
+          {
+            "document": "Bank account details",
+            "likelihood": "LIKELY_HAVE",
+            "reason": "Benefits are paid by bank transfer, so an account is needed and most applicants have one",
+            "basedOn": null
+          }
+        ],
+        "prefilled": [
+          {
+            "label": "Scheme applied for",
+            "value": "Pradhan Mantri Awas Yojana – Urban 2.0",
+            "field": null
+          },
+          {
+            "label": "Implementing department",
+            "value": "Ministry of Housing & Urban Affairs",
+            "field": null
+          },
+          {
+            "label": "Applicant name",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Age",
+            "value": "41 years",
+            "field": "age"
+          },
+          {
+            "label": "Gender",
+            "value": "Male",
+            "field": "gender"
+          },
+          {
+            "label": "State",
+            "value": "Bihar",
+            "field": "state"
+          },
+          {
+            "label": "District",
+            "value": "Gaya",
+            "field": "district"
+          },
+          {
+            "label": "Social category",
+            "value": "OBC",
+            "field": "socialCategory"
+          },
+          {
+            "label": "Annual family income",
+            "value": "₹1 lakh – ₹2.5 lakh",
+            "field": "incomeBracket"
+          },
+          {
+            "label": "Occupation",
+            "value": "Farmer",
+            "field": "occupation"
+          },
+          {
+            "label": "Land holding",
+            "value": "1.2 hectares",
+            "field": "landHolding"
+          },
+          {
+            "label": "Currently studying",
+            "value": "No",
+            "field": "isStudent"
+          },
+          {
+            "label": "Disability certificate",
+            "value": "No",
+            "field": "hasDisability"
+          },
+          {
+            "label": "Aadhaar number",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Bank account number",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Mobile number",
+            "value": null,
+            "field": null
+          }
+        ],
+        "unverifiedCriteria": [],
+        "applyUrl": "https://pmay-urban.gov.in/",
+        "sourceUrl": "https://pmay-urban.gov.in/"
+      },
+      "packSchemeId": "2bf52f6f-bc52-4948-8fdc-34088d6fb47e"
+    },
+    {
+      "personaId": "widow",
+      "transcript": "meri umar sadsath saal hai, main vidhwa hoon, Madhya Pradesh mein rehti hoon, koi zameen nahi hai aur aay bahut kam hai",
+      "match": {
+        "matches": [
+          {
+            "id": "83a109b2-ce05-4192-b0bd-5f3aa39a758f",
+            "name": "Indira Gandhi National Widow Pension Scheme-Madhya Pradesh",
+            "ministry": "Government of Madhya Pradesh",
+            "state": "IN-MP",
+            "category": "WOMEN_AND_CHILD",
+            "benefitText": "The beneficiary will get a monthly pension of ₹ 600/-.",
+            "applicationUrl": "https://socialsecurity.mp.gov.in/Scheme/IGNWP.aspx",
+            "eligibility": {
+              "minAge": 40,
+              "maxAge": 79,
+              "maxAnnualIncome": 100000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "IN-MP"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Three photos of applicant",
+              "Husband's death certificate",
+              "B.P.L. card",
+              "Certificate to confirm age"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/ignwpsmp",
+            "lastScrapedAt": "2026-08-14T19:43:55.436Z",
+            "createdAt": "2026-08-14T19:43:57.100Z",
+            "updatedAt": "2026-08-15T04:33:58.551Z",
+            "proxyNote": "Income ceiling of ₹1,00,000 is an approximation. The published criteria select beneficiaries by deprivation status (matched on \"Below Poverty Line\"), which carries no income figure.",
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "2407555f-167b-4e44-8c26-c0fe9458b974",
+            "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+            "ministry": "Ministry of Petroleum & Natural Gas",
+            "state": null,
+            "category": "ENERGY",
+            "benefitText": "A free LPG connection issued in the name of an adult woman of the household, including a deposit-free cylinder, the first refill and a stove.",
+            "applicationUrl": "https://www.pmuy.gov.in/",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": 100000,
+              "gender": "FEMALE",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Ration card or state-issued proof of a poor household",
+              "Bank account details"
+            ],
+            "sourceUrl": "https://www.pmuy.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.574Z",
+            "createdAt": "2026-08-14T19:13:50.576Z",
+            "updatedAt": "2026-08-14T19:13:50.576Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "142169fa-26c3-4f30-83b6-407cbf249835",
+            "name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+            "ministry": "Ministry of Rural Development",
+            "state": null,
+            "category": "SENIOR_CITIZEN",
+            "benefitText": "A central pension of ₹200 per month from age 60 and ₹500 per month from age 80, for people from below-poverty-line households. Most states add a top-up to this amount.",
+            "applicationUrl": "https://nsap.nic.in/",
+            "eligibility": {
+              "minAge": 60,
+              "maxAge": null,
+              "maxAnnualIncome": 100000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Age proof",
+              "BPL card",
+              "Bank account details"
+            ],
+            "sourceUrl": "https://nsap.nic.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.551Z",
+            "createdAt": "2026-08-14T19:13:50.553Z",
+            "updatedAt": "2026-08-14T19:13:50.553Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "2bf52f6f-bc52-4948-8fdc-34088d6fb47e",
+            "name": "Pradhan Mantri Awas Yojana – Urban 2.0",
+            "ministry": "Ministry of Housing & Urban Affairs",
+            "state": null,
+            "category": "HOUSING",
+            "benefitText": "Central assistance of up to ₹2.5 lakh towards constructing or buying a house, or an interest subsidy on a home loan, for economically weaker section families in urban areas.",
+            "applicationUrl": "https://pmay-urban.gov.in/",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": 300000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Income certificate",
+              "Proof of urban residence",
+              "Bank account details",
+              "Affidavit confirming no pucca house is owned in India"
+            ],
+            "sourceUrl": "https://pmay-urban.gov.in/",
+            "lastScrapedAt": "2026-08-14T19:13:50.419Z",
+            "createdAt": "2026-08-14T19:13:50.420Z",
+            "updatedAt": "2026-08-14T19:13:50.420Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "771beeb8-4d8e-4b74-b7cb-40d645301c4b",
+            "name": "Pradhan Mantri Suraksha Bima Yojana",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "SOCIAL_SECURITY",
+            "benefitText": "On Death- the Nominee shall get Rs. 2 Lakhs.\nTotal and irrecoverable loss of both eyes or loss of use of both hands or feet or loss of sight of one eye and loss of use of hand or foot- Subscriber shall get Rs. 2 Lakhs.\nTotal and irrecoverable loss of sight of one eye or loss of use of one hand or foot –subscriber shall get Rs. 1 Lakh.",
+            "applicationUrl": "https://jansuraksha.gov.in/Forms-PMSBY.aspx",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": 70,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/pmsby",
+            "lastScrapedAt": "2026-08-14T19:19:32.129Z",
+            "createdAt": "2026-08-14T19:19:33.422Z",
+            "updatedAt": "2026-08-15T04:08:32.296Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "9e6bcc56-a9bb-4533-a4f2-1df6ff4f58aa",
+            "name": "Samagr Samajik Suraksha Pension Yojana",
+            "ministry": "Government of Madhya Pradesh",
+            "state": "IN-MP",
+            "category": "FINANCIAL_INCLUSION",
+            "benefitText": "Pension amount: Rs. 600/- per momth.",
+            "applicationUrl": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=355",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": 100000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "IN-MP"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Two photos",
+              "BPL Card or destitute/poor certificate",
+              "Age proof certificate",
+              "Disability certificate",
+              "Welfare / Abandonment Certificate"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/ssspy",
+            "lastScrapedAt": "2026-08-14T19:34:36.234Z",
+            "createdAt": "2026-08-14T19:34:40.660Z",
+            "updatedAt": "2026-08-14T19:34:40.660Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "adb372c4-a01c-4a86-b6f1-cb281a693eca",
+            "name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+            "ministry": "Ministry of Health & Family Welfare",
+            "state": null,
+            "category": "HEALTHCARE",
+            "benefitText": "₹5 lakh per family per year of cashless secondary and tertiary hospital treatment at empanelled public and private hospitals, with no cap on family size or age.",
+            "applicationUrl": "https://beneficiary.nha.gov.in/",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": 300000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Aadhaar card",
+              "Ration card",
+              "Family identification details"
+            ],
+            "sourceUrl": "https://nha.gov.in/PM-JAY",
+            "lastScrapedAt": "2026-08-14T19:13:50.452Z",
+            "createdAt": "2026-08-14T19:13:50.454Z",
+            "updatedAt": "2026-08-14T19:13:50.454Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "41b3d041-ee8f-422d-a902-dc25b0fda678",
+            "name": "Shaikshanik Chatravriti Yojana",
+            "ministry": "Government of Madhya Pradesh",
+            "state": "IN-MP",
+            "category": "EDUCATION",
+            "benefitText": "Under the scheme, the scholarship amount fixed for each class is provided by the board to the students studying in Class 5th to 12th, Graduation, Post Graduation, ITI, Polytechnic, PGDCA, DCA (Computer Course), B.E., M.B.B.S. M.Sc.\nThe scholarship amount will be paid by the student by e-payment through the Regional Office after the approval of the Welfare Commissioner as per the bank details given along with the application.",
+            "applicationUrl": "https://scholarshipportal.mp.nic.in/ShramKalyan/Default.aspx",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "IN-MP"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Latest passport-size photograph (JPEG) of the applicant",
+              "Previous year's mark sheet (JPEG) of the class passed by the applicant",
+              "Photocopy of the first page of the bank passbook of the applicant clearly showing his/her name, bank account number, and IFS code"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/mskscy",
+            "lastScrapedAt": "2026-08-14T19:30:06.823Z",
+            "createdAt": "2026-08-14T19:30:08.524Z",
+            "updatedAt": "2026-08-15T04:16:12.057Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "196e3a76-4774-4af2-800d-7a81b08568a6",
+            "name": "Stand-Up India",
+            "ministry": "Ministry Of Finance",
+            "state": null,
+            "category": "ENTREPRENEURSHIP",
+            "benefitText": "Facilitation of composite loan (inclusive of term loan and working capital) between ₹10 Lakhs and ₹100 Lakhs. Rupay debit card to be issued for convenience of the borrower.\nThe web portal by SIDBI provides hand-holding support through a network of agencies engaged in training, skill development, mentoring, project report preparation, application filling, work shed / utility support services, subsidy schemes etc.",
+            "applicationUrl": "https://www.standupmitra.in/Login/Register",
+            "eligibility": {
+              "minAge": 18,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Proof of Identity: Voter’s ID Card / Passport / Driving License / PAN Card / Signature identification from present bankers of proprietor, partner of director ( if a company)",
+              "Proof of Residence: Recent telephone bills, electricity bill, property tax receipt /Passport / voter’s ID Card of Proprietor, partner of Director (if a company)",
+              "Proof of Business Address",
+              "Proof that the applicant is not a defaulter in any Bank / Financial Institution",
+              "Memorandum and articles of association of the Company / Partnership Deed of partners etc",
+              "Assets and liabilities statement of promoters and guarantors along with latest income tax returns",
+              "Rent Agreement (if business premises on rent) and clearance from pollution control board if applicable",
+              "SSI / MSME registration (if applicable)",
+              "Projected balance sheets for the next two years in case of working capital limits and for the period of the loan in case of term loan",
+              "Photocopies of lease deeds/ title deeds of all the properties being offered as primary and collateral securities",
+              "Documents to establish whether the applicant belongs to SC/ST Category, wherever applicable",
+              "Certificate of incorporation from ROC to establish whether majority stake holding in the company is in the hands of a person who belongs to SC/ST/Woman category",
+              "For cases with exposure above ₹ 25 Lakhs:",
+              "Profile of the unit (includes names of promoters, other directors in the company, the activity being undertaken addresses of all offices and plants, shareholding pattern etc",
+              "Last three years balance sheets of the Associate / Group Companies (if any)",
+              "Project report (for the proposed project if term funding is required) containing details of the machinery to be acquired, from whom to be acquired, price, names of suppliers, financial details like capacity of machines, capacity of utilization assumed, production, sales, projected profit and loss and balance sheets for the tenor of the loan, the details of labour, staff to be hired, basis of assumption of such financial details etc",
+              "Manufacturing process if applicable, major profile of executives in the company, any tie-ups, details about raw material used and their suppliers, details about the buyers, details about major-competitors and the company’s strength and weaknesses as compared to their competitors etc"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/sui",
+            "lastScrapedAt": "2026-08-14T19:19:26.464Z",
+            "createdAt": "2026-08-14T19:19:28.146Z",
+            "updatedAt": "2026-08-15T04:30:40.102Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "a141090c-9811-446b-a994-5d7a1c95658b",
+            "name": "Usha Kiran Yojana",
+            "ministry": "Government of Madhya Pradesh",
+            "state": "IN-MP",
+            "category": "WOMEN_AND_CHILD",
+            "benefitText": "Providing protection and support against domestic violence",
+            "applicationUrl": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=250",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "IN-MP"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "Passport-size photograph",
+              "Aadhaar card"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/uky",
+            "lastScrapedAt": "2026-08-14T19:34:58.166Z",
+            "createdAt": "2026-08-14T19:35:10.147Z",
+            "updatedAt": "2026-08-14T19:35:10.147Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          },
+          {
+            "id": "fd3099d2-4955-4da2-8b82-02adcf305a60",
+            "name": "Scheme For Financial Assistance For Veteran Artists",
+            "ministry": "Ministry Of Culture",
+            "state": null,
+            "category": "SENIOR_CITIZEN",
+            "benefitText": "Under the scheme, a total allowance of ₹6000/- per month will be given to an eligible beneficiary.\nIn case of the death of a beneficiary getting an artist pension, the financial assistance may be transferred, at the discretion of the Central Government, in the name of the spouse of the beneficiary till life.\nNote 01: The monthly allowance contributed by the State Government/UT Administration concerned shall be at least ₹500/- per month per beneficiary.\nNote 02: The monthly allowance contributed by the Central Government shall not exceed ₹5500/- per month per beneficiary.\nNote 03: Out of ₹6000/-, the monthly contribution of allowance of the Central Government will be less than the extent of the monthly contribution of allowance being provided to the applicant by the State Government/UT Administration.\nNote 04: If State Government is already providing ₹1000/- per month pension to an artiste recommended to get financial assistance from the Central Government under this Scheme, in that case, the contribution of the Central Government would be only ₹5000/- per month.\nNote 05: In respect of State Govt./UT Administration where there is no provision for an Artist's Pension, ₹6000/- per month will be paid as an Artist Pension by the Central Government.\nNote 06: In case of the death of a beneficiary, a request application should be received in the Ministry of Culture from the spouse along with the relevant documents within the period of one year from the date of death of the beneficiary artist. After the period of one year, the claim for the transfer of pension in the name of the spouse will stand forfeited and no request in this regard shall be entertained.",
+            "applicationUrl": "http://csms.nic.in/login/index.php",
+            "eligibility": {
+              "minAge": 60,
+              "maxAge": null,
+              "maxAnnualIncome": 48000,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "A recent (not older than six months) clear & colored passport-size photograph of the applicant to be affixed on the specified place in the application form;",
+              "Self-attested copy of any one document from the following listed documents for address proof:- Aadhaar Card issued by Unique Identification Authority of India(UIDAI); Elector’s photo identity card; Passport; Driving License; Electricity Bill; Landline telephone or broadband connection bill; Water Bill; Consumer gas connection card or book or piped gas bill; Bank account statement, Domicile certificate issued by the Government; Passport of the spouse; Post office passbook having an address of the applicant; Property registration document",
+              "Self-attested copy of any one document from the following listed documents for proof of Date of Birth:- Aadhaar Card issued by UIDAI; PAN Card, Elector’s photo identity card; Passport; Driving License; Birth Certificate issued by the Municipal Authority or any office authorized to issue Birth and Death Certificate by the Registrar of Birth and Deaths; Marriage certificate issued by Registrar of Marriages; Matriculation/10th class certificate or mark sheet of recognized Board; Domicile certificate issued by the Government",
+              "Self-attested copy of Aadhaar Card issued by UIDAI",
+              "Original copy of Income Certificate in the prescribed format [Annexure-II(A)] issued by the Competent Authority of the State/UTs concerned",
+              "Copies of relevant documents which support the applicant’s contributions made in the field of Art, Culture, etc., or awards, recognition, or distinction received by the applicant from Central/State Government/Union Territory or any prominent Literary or Arts Society",
+              "Duly filled-in and signed prescribed Bank Authorization letter (Annexure-IV) which is verified & signed by the Manager of the concerned Bank (in original)",
+              "Recommendation letter obtained from the Culture Department of the concerned Stated Government/UT Administrations in the prescribed format [Part-II of the Application Form (Appendix)]",
+              "In case of pension to the spouse in case of death of beneficiary:",
+              "Copy of death certificate of the late beneficiary in original or self-attested;",
+              "Documentary proof to support that the late beneficiary was getting artistes pension;",
+              "Legal heir certificate in the prescribed proforma issued by the Competent Authority and an affidavit from SDM or 1st Class Magistrate in proforma;",
+              "Self-attested copy of the Digital Life Certificate (DLC) of the spouse processed through Jeevan Pramaan Portal https://jeevanpramaan.gov.in",
+              "Self-attested copy of the latest Income Certificate of the spouse in the prescribed format [Annexure-II(A)] issued by the concerned Competent Authority of the States/UTs[Annexure-II(B)];",
+              "Self-attested copy of Aadhaar Card of spouse issued by UIDAI;",
+              "Self-attested copy of any document in support of address proof of the spouse",
+              "An undertaking that he/she is not getting financial assistance under other Schemes of the Ministry of Culture or other Ministry/Department of Central Government for the same purpose",
+              "Bank Authorization Letter in the prescribed format (Annexure-IV)"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/sfava",
+            "lastScrapedAt": "2026-08-14T19:19:37.103Z",
+            "createdAt": "2026-08-14T19:19:38.808Z",
+            "updatedAt": "2026-08-15T04:08:34.352Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "UNKNOWN",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [
+              "maxAnnualIncome"
+            ],
+            "isEligible": true,
+            "needsIncomeVerification": true,
+            "matchScore": 92
+          },
+          {
+            "id": "59f1700a-4d22-4d7e-ab7b-ead30fdc9310",
+            "name": "Abdul Kalam Technology Innovation National Fellowship",
+            "ministry": "Ministry Of Science And Technology",
+            "state": null,
+            "category": "EDUCATION",
+            "benefitText": "The fellowship amount is ₹25,000/- per month in addition to regular income.\nA Research grant of ₹15.00 lakh per annum.\nAn Overhead of ₹1.00 lakh per annum to the host institute.\nNote: The fellowship is taxable as per the IT rule of the Government of India.",
+            "applicationUrl": "https://www.inae.in/research-innovation/abdul-kalam-technology-innovation-national-fellowship/",
+            "eligibility": {
+              "minAge": null,
+              "maxAge": null,
+              "maxAnnualIncome": null,
+              "gender": "*",
+              "socialCategory": [
+                "*"
+              ],
+              "occupation": [
+                "*"
+              ],
+              "states": [
+                "*"
+              ],
+              "maxLandHolding": null,
+              "requiresDisability": false,
+              "isStudentOnly": false
+            },
+            "requiredDocuments": [
+              "1. Identity proof of candidate",
+              "2. Passport size photograph",
+              "3. Proof of age",
+              "4. Proof that the candidate is working",
+              "5. Educational Qualifications certificates",
+              "6. Details of Professional awards/recognition/fellowship",
+              "7. Endorsement Certificate",
+              "8. Bank Details (Bank Account Number, Name of the Bank, Bank Branch, and IFSC Code)",
+              "9. Any other document, as required"
+            ],
+            "sourceUrl": "https://www.myscheme.gov.in/schemes/aktinf",
+            "lastScrapedAt": "2026-08-14T19:39:41.287Z",
+            "createdAt": "2026-08-14T19:39:43.349Z",
+            "updatedAt": "2026-08-14T19:39:43.349Z",
+            "proxyNote": null,
+            "checks": {
+              "gender": "PASS",
+              "maxAge": "PASS",
+              "minAge": "PASS",
+              "states": "PASS",
+              "occupation": "PASS",
+              "isStudentOnly": "PASS",
+              "maxLandHolding": "PASS",
+              "socialCategory": "PASS",
+              "maxAnnualIncome": "PASS",
+              "requiresDisability": "PASS"
+            },
+            "failedCriteria": [],
+            "unverifiedCriteria": [],
+            "isEligible": true,
+            "needsIncomeVerification": false,
+            "matchScore": 100
+          }
+        ],
+        "eligibleCount": 16,
+        "nearMissCount": 48,
+        "consideredCount": 64,
+        "profileCompleteness": 1,
+        "nextQuestion": {
+          "label": "Income limit",
+          "question": "What is your total yearly family income?",
+          "questionHi": "आपके परिवार की सालाना आय कितनी है?",
+          "answeredBy": "incomeBracket",
+          "criterion": "maxAnnualIncome",
+          "field": "incomeBracket",
+          "unlocks": 1
+        }
+      },
+      "pack": {
+        "scheme": {
+          "id": "83a109b2-ce05-4192-b0bd-5f3aa39a758f",
+          "name": "Indira Gandhi National Widow Pension Scheme-Madhya Pradesh",
+          "ministry": "Government of Madhya Pradesh",
+          "state": "IN-MP",
+          "category": "WOMEN_AND_CHILD",
+          "benefitText": "The beneficiary will get a monthly pension of ₹ 600/-.",
+          "applicationUrl": "https://socialsecurity.mp.gov.in/Scheme/IGNWP.aspx",
+          "eligibility": {
+            "minAge": 40,
+            "maxAge": 79,
+            "maxAnnualIncome": 100000,
+            "gender": "*",
+            "socialCategory": [
+              "*"
+            ],
+            "occupation": [
+              "*"
+            ],
+            "states": [
+              "IN-MP"
+            ],
+            "maxLandHolding": null,
+            "requiresDisability": false,
+            "isStudentOnly": false
+          },
+          "requiredDocuments": [
+            "Three photos of applicant",
+            "Husband's death certificate",
+            "B.P.L. card",
+            "Certificate to confirm age"
+          ],
+          "sourceUrl": "https://www.myscheme.gov.in/schemes/ignwpsmp",
+          "lastScrapedAt": "2026-08-14T19:43:55.436Z",
+          "rawEligibility": "The applicant should be a domicile of the state of Madhya Pradesh.\nThe applicant should be from a Below Poverty Line (BPL) family.\nThe application should be aged between 40 to 79 years.",
+          "proxyNote": "Income ceiling of ₹1,00,000 is an approximation. The published criteria select beneficiaries by deprivation status (matched on \"Below Poverty Line\"), which carries no income figure.",
+          "createdAt": "2026-08-14T19:43:57.100Z",
+          "updatedAt": "2026-08-15T04:33:58.551Z"
+        },
+        "confidence": "PROXY_APPROXIMATED",
+        "proxyWarning": "Income ceiling of ₹1,00,000 is an approximation. The published criteria select beneficiaries by deprivation status (matched on \"Below Poverty Line\"), which carries no income figure.",
+        "checklist": [
+          {
+            "document": "Three photos of applicant",
+            "likelihood": "UNKNOWN",
+            "reason": "Check the official portal for what this involves",
+            "basedOn": null
+          },
+          {
+            "document": "Husband's death certificate",
+            "likelihood": "UNKNOWN",
+            "reason": "Check the official portal for what this involves",
+            "basedOn": null
+          },
+          {
+            "document": "B.P.L. card",
+            "likelihood": "UNKNOWN",
+            "reason": "Check the official portal for what this involves",
+            "basedOn": null
+          },
+          {
+            "document": "Certificate to confirm age",
+            "likelihood": "UNKNOWN",
+            "reason": "Check the official portal for what this involves",
+            "basedOn": null
+          }
+        ],
+        "prefilled": [
+          {
+            "label": "Scheme applied for",
+            "value": "Indira Gandhi National Widow Pension Scheme-Madhya Pradesh",
+            "field": null
+          },
+          {
+            "label": "Implementing department",
+            "value": "Government of Madhya Pradesh",
+            "field": null
+          },
+          {
+            "label": "Applicant name",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Age",
+            "value": "67 years",
+            "field": "age"
+          },
+          {
+            "label": "Gender",
+            "value": "Female",
+            "field": "gender"
+          },
+          {
+            "label": "State",
+            "value": "Madhya Pradesh",
+            "field": "state"
+          },
+          {
+            "label": "District",
+            "value": "Rewa",
+            "field": "district"
+          },
+          {
+            "label": "Social category",
+            "value": "General",
+            "field": "socialCategory"
+          },
+          {
+            "label": "Annual family income",
+            "value": "Below ₹50,000",
+            "field": "incomeBracket"
+          },
+          {
+            "label": "Occupation",
+            "value": "Homemaker",
+            "field": "occupation"
+          },
+          {
+            "label": "Land holding",
+            "value": "0 hectares",
+            "field": "landHolding"
+          },
+          {
+            "label": "Currently studying",
+            "value": "No",
+            "field": "isStudent"
+          },
+          {
+            "label": "Disability certificate",
+            "value": "No",
+            "field": "hasDisability"
+          },
+          {
+            "label": "Aadhaar number",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Bank account number",
+            "value": null,
+            "field": null
+          },
+          {
+            "label": "Mobile number",
+            "value": null,
+            "field": null
+          }
+        ],
+        "unverifiedCriteria": [],
+        "applyUrl": "https://socialsecurity.mp.gov.in/Scheme/IGNWP.aspx",
+        "sourceUrl": "https://www.myscheme.gov.in/schemes/ignwpsmp"
+      },
+      "packSchemeId": "83a109b2-ce05-4192-b0bd-5f3aa39a758f"
+    }
+  ]
+}

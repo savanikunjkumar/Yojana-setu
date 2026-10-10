@@ -1,0 +1,86 @@
+{
+  "name": "@sih/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NestJS API for scheme eligibility matching",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "nest build",
+    "dev": "nest start --watch",
+    "start": "node dist/main.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p scripts/tsconfig.json --noEmit",
+    "lint": "eslint \"{src,prisma,scripts}/**/*.ts\" --max-warnings 0",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "clean": "rimraf dist .turbo",
+    "prisma:generate": "dotenv -e ../../.env -- prisma generate",
+    "prisma:migrate": "dotenv -e ../../.env -- prisma migrate dev",
+    "prisma:deploy": "dotenv -e ../../.env -- prisma migrate deploy",
+    "prisma:reset": "dotenv -e ../../.env -- prisma migrate reset --force",
+    "prisma:seed": "dotenv -e ../../.env -- prisma db seed",
+    "prisma:studio": "dotenv -e ../../.env -- prisma studio",
+    "prisma:validate": "dotenv -e ../../.env -- prisma validate",
+    "scrape": "dotenv -e ../../.env -- tsx scripts/scrape-myscheme.ts",
+    "backfill": "dotenv -e ../../.env -- tsx scripts/backfill-eligibility-fixes.ts",
+    "bench:voice": "dotenv -e ../../.env -- tsx scripts/bench-voice-latency.ts",
+    "scrape:test": "tsx scripts/myscheme/normalize-rules.spec.ts && tsx scripts/myscheme/occupation-recovery.spec.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/config": "^3.3.0",
+    "@nestjs/core": "^10.4.15",
+    "@nestjs/platform-express": "^10.4.15",
+    "@nestjs/swagger": "^8.1.0",
+    "@prisma/client": "^6.1.0",
+    "@sih/shared": "*",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.9",
+    "@nestjs/schematics": "^10.2.3",
+    "@nestjs/testing": "^10.4.15",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^29.7.0",
+    "playwright": "^1.62.1",
+    "prisma": "^6.1.0",
+    "rimraf": "^6.0.1",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": [
+        "ts-jest",
+        {
+          "tsconfig": "<rootDir>/../tsconfig.json"
+        }
+      ]
+    },
+    "collectCoverageFrom": [
+      "**/*.ts"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  // The scraper is its own project so that DOM types are available to the code
+  // Playwright serialises into the page (`page.evaluate`, `$$eval`) without
+  // exposing `document` and friends to the NestJS server code next door.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM"],
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

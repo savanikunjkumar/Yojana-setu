@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["ES2022"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "declaration": false,
+    "declarationMap": false,
+    "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo",
+    "strictPropertyInitialization": false
+  },
+  // `prisma/seed.ts` is type-checked here but never emitted; it runs under tsx, and
+  // tsconfig.build.json narrows the build back to `src`.
+  //
+  // `scripts/` is a separate project (scripts/tsconfig.json) because the scraper's
+  // Playwright callbacks execute in a browser and need DOM types. Keeping that lib
+  // out of here means server code cannot accidentally reach for `document`.
+  "include": ["src/**/*.ts", "prisma/**/*.ts"],
+  "exclude": ["node_modules", "dist", "scripts"]
+}

@@ -1,0 +1,13 @@
+-- Records that a scheme's income ceiling is a PROXY rather than a published rule.
+--
+-- Some schemes select beneficiaries from SECC 2011 / BPL / Antyodaya lists, which carry
+-- no income figure at all. The scraper substitutes a ceiling so those schemes can be
+-- matched, and that substitution is our invention — a match against it is weaker than a
+-- match against a stated criterion, and the UI has to present it differently.
+--
+-- Stored rather than re-derived: the scraper knows precisely when it applied a proxy, and
+-- reconstructing that later from deprivation keywords plus a round-looking income cap
+-- would be guessing about our own data.
+--
+-- Additive and nullable, so it is safe on a populated table. NULL means "hard criteria".
+ALTER TABLE "schemes" ADD COLUMN "proxy_note" TEXT;

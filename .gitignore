@@ -1,0 +1,57 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build output
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# turbo
+.turbo/
+
+# env — never commit real credentials
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.local.example
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# testing
+coverage/
+.nyc_output/
+
+# prisma
+prisma/*.db
+prisma/*.db-journal
+
+# docker volumes (if bind-mounted locally)
+.docker-data/
+
+# editors / OS
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# scraper artifacts: resume log, raw archive, generated report
+apps/api/scripts/.myscheme-data/
+
+# misc
+.eslintcache
+.cache/
+tmp/

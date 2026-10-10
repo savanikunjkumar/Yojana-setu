@@ -1,0 +1,47 @@
+name: sih-scheme-matcher
+
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: sih_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-sih}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sih_dev_password}
+      POSTGRES_DB: ${POSTGRES_DB:-sih_schemes}
+      # Deterministic collation so ORDER BY is identical on every teammate's machine.
+      POSTGRES_INITDB_ARGS: '--locale=C.UTF-8 --encoding=UTF8'
+    ports:
+      - '${POSTGRES_PORT:-5432}:5432'
+    volumes:
+      # Postgres 18+ images expect ONE mount at /var/lib/postgresql, not at
+      # /var/lib/postgresql/data as 17 and earlier did. With the old path the image
+      # sees the mount as unused, refuses to start, and exits 1. The newer layout
+      # also keeps data in a version-named subdirectory so `pg_upgrade --link` works
+      # without crossing a mount boundary.
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${POSTGRES_USER:-sih} -d ${POSTGRES_DB:-sih_schemes}']
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+
+  # Lightweight web SQL client, handy for demoing the match_schemes() query to judges.
+  # Started only with: docker compose --profile tools up -d
+  adminer:
+    image: adminer:5
+    container_name: sih_adminer
+    restart: unless-stopped
+    profiles: ['tools']
+    ports:
+      - '${ADMINER_PORT:-8080}:8080'
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+    name: sih_postgres_data
